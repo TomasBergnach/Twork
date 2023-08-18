@@ -6,13 +6,13 @@ body {
     width:fit-content;
     text-align: center;
     padding: 45px;
+    height: 995px;
 }
 .contenedor {
     background-color: #C6D2ED;
     width: 100vw;
     display: flex;
     overflow: scroll;
-   
 }
 .header {
     width: 85vw; 
@@ -53,6 +53,9 @@ body {
     text-decoration: none ;
     margin-top: 60px;
     font-size:24px;
+    display:flex;
+    justify content:center; 
+    align-items: center;
 }
 .titulo {
     font-size: 50px;
@@ -135,4 +138,16 @@ body {
     overflow: hidden;
 }
 
+@media only screen and (max-width: 768px) {
+    .header {
+        display: flex;
+        width: auto;
+    }
+    .carousel__completo {
+            margin-top: 0px;
+            max-height: 101vh;
+            overflow: hidden;
 
+    }
+
+    }

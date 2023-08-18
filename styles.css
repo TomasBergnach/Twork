@@ -10,9 +10,8 @@ body {
 }
 .contenedor {
     background-color: #C6D2ED;
-    width: 100vw;
+    width: 100%;
     display: flex;
-    overflow: scroll;
 }
 .header {
     width: 85vw; 
@@ -135,19 +134,19 @@ body {
 .imagenes__carousel {
     margin-top: -150px;
     max-height: 101vh;
-    overflow: hidden;
-}
+    }
 
-@media only screen and (max-width: 768px) {
+@media (max-width:768px) {
     .header {
         display: flex;
         width: auto;
+        }
     }
-    .carousel__completo {
+    .imagenes__carousel {
             margin-top: 0px;
-            max-height: 101vh;
-            overflow: hidden;
-
-    }
-
-    }
+            font-size: 16px;
+        }   
+    .recomendaciones {
+        font-size: 16px;
+    } 
+    } 

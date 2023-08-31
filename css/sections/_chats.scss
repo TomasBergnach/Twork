@@ -1,0 +1,29 @@
+.chat-1 {
+    font-size: 40px;
+    margin: 70px;
+    background-color:rgb(172, 197, 214) ;
+    border-radius: 15px;
+    width: 50%;   
+}   
+
+.chats {
+    background-color: $empleos;
+    width: 90%; 
+    margin: 10px;
+    height: 650px;
+    border-radius: 15px;
+    margin-left: -100px;
+}
+.chat-2 {
+    @extend.chat-1;
+    background-color: rgb(172, 197, 214);
+}
+.chat-3 {
+    @extend.chat-1;
+    background-color:rgb(172, 197, 214);
+}
+.chat-4 {
+    @extend.chat-1;
+    background-color:rgb(172, 197, 214);
+}
+

@@ -1,51 +1,12 @@
-body {
-  font-family: "Inter", sans-serif;
+.chat-1, .chat-4, .chat-3, .chat-2 {
+  font-size: 40px;
+  margin: 70px;
+  background-color: rgb(172, 197, 214);
+  border-radius: 15px;
+  width: 50%;
 }
 
-.contenedor {
-  background-color: #C6D2ED;
-  width: 100%;
-  display: flex;
-}
-.contenedor .header {
-  width: 85vw;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-.contenedor .header .barra-buscador {
-  width: 30%;
-  height: 40px;
-  padding: 15px;
-  border: none;
-  border-radius: 50px;
-  outline: none;
-}
-.contenedor .header .usuario {
-  font-size: 40px;
-}
-.contenedor .contenedor-empleos {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  flex: 1;
-  gap: 16px;
-  justify-content: space-around;
-  padding: 0 50px 40px;
-  margin: 0 auto;
-}
-.contenedor .contenedor-empleos .card-tarjeta {
-  max-width: 300px;
-  width: 18%;
-  min-width: 150px;
-}
-.contenedor .contenedor-empleos .card-tarjeta .dupla-empleos {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  justify-content: center;
-}
-.contenedor .contenedor-empleos .card-tarjeta .dupla-empleos .chats {
+.chats {
   background-color: #E3D0D8;
   width: 90%;
   margin: 10px;
@@ -53,70 +14,82 @@ body {
   border-radius: 15px;
   margin-left: -100px;
 }
-.contenedor .contenedor-empleos .card-tarjeta .dupla-empleos .chats .selecciona {
-  margin: 20px;
+
+.chat-2 {
+  background-color: rgb(172, 197, 214);
 }
-.contenedor .contenedor-empleos .card-tarjeta .dupla-empleos .chats .chat {
-  font-size: 40px;
-  margin: 70px;
-  background-color: white;
-  border-radius: 15px;
-  width: 50%;
+
+.chat-3 {
+  background-color: rgb(172, 197, 214);
 }
-.contenedor .imagenes__carousel {
-  margin-top: -150px;
-  max-height: 101vh;
+
+.chat-4 {
+  background-color: rgb(172, 197, 214);
 }
-.contenedor .imagenes__carousel .carousel-inner {
-  width: 50%;
-  height: 50%;
-  transform: scale(0.8);
-  padding: 10px;
-  font-size: 35px;
+
+.chat-1:hover, .chat-2:hover, .chat-3:hover, .chat-4:hover {
+  width: 60%;
+  background-color: rgb(172, 197, 214);
 }
-.contenedor .imagenes__carousel .carousel-inner .carousel-item {
-  width: 50%;
-  height: 50%;
-  transform: scale(0.8);
-  padding: 10px;
+
+.chat-1, .chat-2, .chat-3, .chat-4 {
+  transition-property: width;
+  transition-duration: 0.5s;
+  transition-delay: 0.5s;
+  transition-timing-function: ease-in;
 }
-.contenedor .aside {
+
+body {
+  font-family: "Inter", sans-serif;
+  overflow: hidden;
+}
+
+.aside {
   background-color: #827081;
   width: -moz-fit-content;
   width: fit-content;
   text-align: center;
   padding: 45px;
-  height: 995px;
+  height: 1100px;
+  background-image: linear-gradient(to bottom, #827081, rgb(44, 35, 40));
+  animation-name: desliza;
+  animation-duration: 2s;
+  animation-delay: 0.3s;
+  animation-fill-mode: forwards;
 }
-.contenedor .aside .terminos {
-  padding: 20px;
+
+.contenedor {
+  background-color: #C6D2ED;
+  width: 100%;
+  display: flex;
 }
-.contenedor .aside .terminos-condiciones {
-  margin: auto;
-  background-color: white;
-  border-radius: 50px;
-  padding: 10px;
-  width: -moz-fit-content;
-  width: fit-content;
+
+.header {
+  width: 85vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
-.contenedor .aside .recomendaciones {
-  margin-left: 20px;
-  background-color: white;
-  border-radius: 50px;
-  padding: 10px;
-  width: -moz-fit-content;
-  width: fit-content;
-}
-.contenedor .aside .titulo {
+
+.titulo {
   font-size: 50px;
   font-family: "Freehand", cursive;
 }
-.contenedor .aside .paginas {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+
+.usuario {
+  font-size: 40px;
 }
-.contenedor .aside .paginas .enlace {
+
+.barra-buscador {
+  width: 30%;
+  height: 40px;
+  padding: 15px;
+  border: none;
+  border-radius: 50px;
+  outline: none;
+}
+
+.enlace {
   color: white;
   text-decoration: none;
   margin-top: 60px;
@@ -124,22 +97,46 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  transform: scale();
 }
 
-.empleo {
-  background-color: #E3D0D8;
-  width: 25%;
-  margin: 10px;
-  height: 300px;
-  border-radius: 10px;
+.selecciona {
+  margin: 20px;
 }
 
-.imagen {
-  background-size: cover;
-  width: 100%;
-  height: 300px;
+.carousel-inner {
+  width: 50%;
+  height: 50%;
+  transform: scale(0.8);
+  padding: 10px;
+  font-size: 35px;
+  margin-top: -120px;
 }
 
+.carousel-item {
+  width: 50%;
+  height: 50%;
+  transform: scale(0.8);
+  padding: 10px;
+}
+
+.imagenes__carousel {
+  margin-top: -150px;
+  max-height: 101vh;
+}
+
+.scale:hover {
+  transform: scale(1.2);
+}
+
+@keyframes desliza {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 500px;
+  }
+}
 @media (max-width: 768px) {
   .header {
     display: flex;
@@ -153,4 +150,56 @@ body {
 
 .recomendaciones {
   font-size: 16px;
+}
+
+.contenedor-empleos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex: 1;
+  gap: 16px;
+  justify-content: space-around;
+  padding: 0 50px 40px;
+  margin: 0 auto;
+}
+
+.tarjeta {
+  max-width: 300px;
+  width: 18%;
+  min-width: 150px;
+}
+
+.paginas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dupla-empleos {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+}
+
+.recomendaciones {
+  margin-left: 20px;
+  background-color: white;
+  border-radius: 50px;
+  padding: 10px;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.terminos {
+  padding: 20px;
+}
+
+.terminos-condiciones {
+  margin: auto;
+  background-color: white;
+  border-radius: 50px;
+  padding: 10px;
+  width: -moz-fit-content;
+  width: fit-content;
 }/*# sourceMappingURL=estilos.css.map */

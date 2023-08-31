@@ -1,0 +1,11 @@
+.chat-1:hover {
+    width: 60%;
+    background-color: $chat;
+}
+
+.chat-1 {
+    transition-property: width;
+    transition-duration: 0.5s;
+    transition-delay: 0.5s;
+    transition-timing-function: ease-in ;
+}

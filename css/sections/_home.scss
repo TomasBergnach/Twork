@@ -1,0 +1,99 @@
+body {
+    font-family: 'Inter', sans-serif;
+    overflow: hidden;
+}
+.aside {
+    background-color: $aside;
+    width:fit-content;
+    text-align: center;
+    padding: 45px;
+    height: 1100px;
+    background-image: linear-gradient(to bottom, $aside, rgb(44, 35, 40));
+
+    animation-name: desliza;
+    animation-duration: 2s;
+    animation-delay: 0.3s;
+    animation-fill-mode: forwards;  
+}
+.contenedor {
+    background-color: $primary;
+    width: 100%;
+    display: flex;
+}
+.header {
+    width: 85vw; 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.titulo {
+    font-size: 50px;
+    font-family: 'Freehand', cursive;
+}
+.usuario {
+    font-size: 40px;
+}
+.barra-buscador{
+    width: 30%;
+    height: 40px;
+    padding: 15px;
+    border: none;
+    border-radius: 50px;
+    outline: none;
+}
+.enlace {
+    color: $white;
+    text-decoration: none ;
+    margin-top: 60px;
+    font-size:24px;
+    display:flex;
+    justify-content:center; 
+    align-items: center;
+    transform: scale();
+}
+.selecciona {
+    margin: 20px;
+}
+.carousel-inner {
+    width: 50%;
+    height: 50%;
+    transform: scale(0.8);
+    padding: 10px;
+    font-size: 35px;
+    margin-top: -120px;
+}
+.carousel-item {
+    width: 50%;
+    height: 50%;
+    transform: scale(0.8);
+    padding: 10px;
+}
+.imagenes__carousel {
+    margin-top: -150px;
+    max-height: 101vh;
+}
+.scale:hover {
+    transform: scale(1.2);
+}
+@keyframes desliza {
+    0% {
+        width: 0px;
+    }
+    100% {
+        width: 500px;
+    }
+}
+
+    @media (max-width:768px) {
+        .header {
+            display: flex;
+            width: auto;
+            }
+        }
+        .imagenes__carousel {
+                margin-top: 0px;
+                font-size: 16px;
+            }   
+        .recomendaciones {
+            font-size: 16px;
+        }   

@@ -2,19 +2,27 @@ body {
     font-family: 'Inter', sans-serif;
     overflow: hidden;
 }
-.aside {
+.aside-home {
     background-color: $aside;
     width:fit-content;
     text-align: center;
     padding: 45px;
     height: 1100px;
     background-image: linear-gradient(to bottom, $aside, rgb(44, 35, 40));
-
     animation-name: desliza;
     animation-duration: 2s;
     animation-delay: 0.3s;
-    animation-fill-mode: forwards;  
+    animation-fill-mode: forwards;
 }
+.aside {
+    background-color: $aside;
+    width:fit-content;
+    text-align: center;
+    padding: 45px;
+    height: 1100px;
+    background-image: linear-gradient(to bottom, $aside, rgb(44, 35, 40));  
+}
+
 .contenedor {
     background-color: $primary;
     width: 100%;
@@ -76,12 +84,18 @@ body {
     transform: scale(1.2);
 }
 @keyframes desliza {
-    0% {
-        width: 0px;
+0% {
+    opacity: 0;
+    transform: translateX(-100%);
     }
-    100% {
-        width: 500px;
+100% {
+    opacity: 1;
+    transform: translateX(0);
     }
+}
+.elemento-a-deslizar {
+    width: 500px;
+    animation: desliza 1s ease-out;
 }
 
     @media (max-width:768px) {

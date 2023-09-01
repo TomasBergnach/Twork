@@ -3,7 +3,9 @@
   margin: 70px;
   background-color: rgb(172, 197, 214);
   border-radius: 15px;
-  width: 50%;
+  width: 70%;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
 }
 
 .chats {
@@ -28,7 +30,7 @@
 }
 
 .chat-1:hover, .chat-2:hover, .chat-3:hover, .chat-4:hover {
-  width: 60%;
+  width: 80%;
   background-color: rgb(172, 197, 214);
 }
 
@@ -44,7 +46,7 @@ body {
   overflow: hidden;
 }
 
-.aside {
+.aside-home {
   background-color: #827081;
   width: -moz-fit-content;
   width: fit-content;
@@ -56,6 +58,16 @@ body {
   animation-duration: 2s;
   animation-delay: 0.3s;
   animation-fill-mode: forwards;
+}
+
+.aside {
+  background-color: #827081;
+  width: -moz-fit-content;
+  width: fit-content;
+  text-align: center;
+  padding: 45px;
+  height: 1100px;
+  background-image: linear-gradient(to bottom, #827081, rgb(44, 35, 40));
 }
 
 .contenedor {
@@ -131,12 +143,19 @@ body {
 
 @keyframes desliza {
   0% {
-    width: 0px;
+    opacity: 0;
+    transform: translateX(-100%);
   }
   100% {
-    width: 500px;
+    opacity: 1;
+    transform: translateX(0);
   }
 }
+.elemento-a-deslizar {
+  width: 500px;
+  animation: desliza 1s ease-out;
+}
+
 @media (max-width: 768px) {
   .header {
     display: flex;

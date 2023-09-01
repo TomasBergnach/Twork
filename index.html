@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Twork</title>
+    <meta name="description" content="Encontrá ofertas de trabajo ideales para vos, contacta con empleadores y lleva tu carrera y tus conocimientos a los más alto">
+    <meta name="keywords" content="Empleos, Trabajo, Twork, Ofertas, Recomendaciones, Contactos">
+    <title>Home - Twork</title>
     <link rel="stylesheet" href="styles.css"> 
     <link rel="stylesheet" href="./css/estilos.css"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -15,7 +17,7 @@
 </head>
 <body>
     <div class="contenedor">
-        <div class="aside">
+        <nav class="aside-home">
             <h1 class="titulo">Twork</h1>
             <div class="paginas">
                 <a class="enlace scale" href="index.html"><i class="fa-solid fa-house"></i> Inicio</a>
@@ -24,33 +26,33 @@
                 <a class="enlace scale" href="pages/contactos.html"><i class="fa-solid fa-phone"></i> Contactos</a>
                 <a class="enlace scale" href="pages/terminos.html"><i class="fa-solid fa-file"></i> Terminos </a>
             </div>
-    </div>
+        </nav>
         <div class="">
-            <div class="header">
+            <header class="header">
                 <h3>Home</h3>
                 <input class="barra-buscador" type="text" placeholder="Buscar...">
                 <p class="usuario"><i class="fa-solid fa-user"></i></p>
-            </div>
-            <div class="carousel__completo">
+            </header>
+            <main class="carousel__completo">
                 <h3 class="recomendaciones">Recomendaciones</h3>
                 <div id="carouselExampleCaptions" class="carousel slide imagenes__carousel" data-bs-ride="carousel">
                   <div class="carousel-inner">
                     <div class="carousel-item active">
-                      <img src="./images/img entrenador.jpg" class="d-block w-100" alt="..." data-bs-interval="3500">
+                      <img src="./images/img entrenador.jpg" class="d-block w-100" alt="Entrenador de Gimnasio" data-bs-interval="3500">
                       <div class="carousel-caption d-none d-md-block">
                         <h5>Entrenador</h5>
                         <p>Somos un gimnasio en General Rodriguez, buscamos entrenador con experiencia para capacitar a los clientes. Contacto: 1145678439.</p>
                       </div>
                     </div>
                     <div class="carousel-item">
-                      <img src="./images/img abogado.jpg" class="d-block w-100" alt="..." data-bs-interval="3500">
+                      <img src="./images/img abogado.jpg" class="d-block w-100" alt="Abogado" data-bs-interval="3500">
                       <div class="carousel-caption d-none d-md-block">
                         <h5>Abogado</h5>
                         <p>Se busca abogado para estudio de abogacía en Morón, con estudios y algo de experiencia, contactarnos al 1154678945.</p>
                       </div>
                     </div>
                     <div class="carousel-item">
-                      <img src="./images/img pastel.jpg" class="d-block w-100" alt="..." data-bs-interval="3500">
+                      <img src="./images/img pastel.jpg" class="d-block w-100" alt="Pastelera" data-bs-interval="3500">
                       <div class="carousel-caption d-none d-md-block">
                         <h5>Pastelera</h5>
                         <p>Se busca pastelera/o para una panadería en Buenos Aires capital federal, contacto: 1165437806.</p>
@@ -66,7 +68,7 @@
                     <span class="visually-hidden">Next</span>
                   </button>
                 </div>
-            </div>
+            </main>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>        

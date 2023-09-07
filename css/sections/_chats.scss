@@ -1,4 +1,4 @@
-.chat-1 {
+.persona-1 {
     font-size: 40px;
     margin: 70px;
     background-color:rgb(172, 197, 214) ;
@@ -7,7 +7,7 @@
     max-height: fit-content; 
 }   
 
-.chats {
+.personas {
     background-color: $empleos;
     width: 90%; 
     margin: 10px;
@@ -15,16 +15,48 @@
     border-radius: 15px;
     margin-left: -100px;
 }
-.chat-2 {
-    @extend.chat-1;
+.dupla-empleos {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+}
+.persona-2 {
+    @extend.persona-1;
     background-color: rgb(172, 197, 214);
 }
-.chat-3 {
-    @extend.chat-1;
+.persona-3 {
+    @extend.persona-1;
     background-color:rgb(172, 197, 214);
 }
-.chat-4 {
-    @extend.chat-1;
+.persona-4 {
+    @extend.persona-1;
     background-color:rgb(172, 197, 214);
 }
 
+@media (max-width: 1400px) {
+    .persona-1 {
+        font-size: 30px;
+    }
+}
+@media (max-width: 1100px) {
+    .persona-1 {
+        font-size: 20px;
+        margin: 30px auto;
+    }
+    .personas {
+        height: 40vh;
+    }
+    .recomendaciones{
+        font-size: 18px;
+        padding: 5px;
+    }
+    .selecciona {
+        font-size: 20px;
+    }
+}
+@media (max-width: 768px) {
+    .persona-1 {
+        font-size: 18px;
+    }
+}

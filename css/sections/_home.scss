@@ -97,17 +97,87 @@ body {
     width: 500px;
     animation: desliza 1s ease-out;
 }
+@media (max-width:1140px) {
+    .aside-home {
+        width:25vw;
+        padding: 20px;
+    }
+    .aside {
+        width:25vw;
+        padding: 20px;
+    }
+    .contenedor,body {
+        width: 100vw;
+    }
+    .header {
+        width: 70vw; 
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .titulo {
+        font-size: 40px;
+    }
+    .usuario {
+        font-size: 25px;
+    }
+    .barra-buscador{
+        width: 30%;
+        height: 30px;
+        padding: 10px;
+    }
+    .header > h3 {
+        font-size: 18px;
+    }
 
-    @media (max-width:768px) {
-        .header {
-            display: flex;
-            width: auto;
-            }
-        }
-        .imagenes__carousel {
-                margin-top: 0px;
-                font-size: 16px;
-            }   
-        .recomendaciones {
-            font-size: 16px;
-        }   
+    .carousel-inner {
+        width: 70%;
+        height: 70%;
+        margin-top: 0px;
+        margin: auto;
+    }
+    .carousel-item {
+        width: 70%;
+        height: 70%;
+    }
+    .imagenes__carousel {
+        margin-top: 0px;
+        max-height: none;
+    }
+}
+
+// @media (max-width:1300px) and (min-width:768px) {
+//     .header {
+//         display: flex;
+//         width: 85%;
+//         }
+//         .carousel-item {
+//             margin-top: 50px;
+//         }
+//         .imagenes__carousel {
+//             margin-top: 150px;
+//             font-size: 16px;
+//         }   
+//         .recomendaciones {
+//         font-size: 16px;
+//         }
+//     }
+
+
+// @media (max-width:768px) and (min-width:300px) {
+//         .header {
+//             display: flex;
+//             width: 85%;
+            
+//             }
+//             .carousel-item {
+//                 margin-top: 50px;
+//             }
+//             .imagenes__carousel {
+//                 margin-top: 300px;
+//                 font-size: 10px;
+//             }   
+//             .recomendaciones {
+//             font-size: 16px;
+//             }
+//     }

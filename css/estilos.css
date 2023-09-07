@@ -1,4 +1,4 @@
-.chat-1, .chat-4, .chat-3, .chat-2 {
+.persona-1, .persona-4, .persona-3, .persona-2 {
   font-size: 40px;
   margin: 70px;
   background-color: rgb(172, 197, 214);
@@ -8,7 +8,7 @@
   max-height: fit-content;
 }
 
-.chats {
+.personas {
   background-color: #E3D0D8;
   width: 90%;
   margin: 10px;
@@ -17,30 +17,88 @@
   margin-left: -100px;
 }
 
-.chat-2 {
+.dupla-empleos {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+}
+
+.persona-2 {
   background-color: rgb(172, 197, 214);
 }
 
-.chat-3 {
+.persona-3 {
   background-color: rgb(172, 197, 214);
 }
 
-.chat-4 {
+.persona-4 {
   background-color: rgb(172, 197, 214);
 }
 
-.chat-1:hover, .chat-2:hover, .chat-3:hover, .chat-4:hover {
+@media (max-width: 1400px) {
+  .persona-1, .persona-2, .persona-3, .persona-4 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 1100px) {
+  .persona-1, .persona-2, .persona-3, .persona-4 {
+    font-size: 20px;
+    margin: 30px auto;
+  }
+  .personas {
+    height: 40vh;
+  }
+  .recomendaciones {
+    font-size: 18px;
+    padding: 5px;
+  }
+  .selecciona {
+    font-size: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .persona-1, .persona-2, .persona-3, .persona-4 {
+    font-size: 18px;
+  }
+}
+.chat-1:hover {
   width: 80%;
   background-color: rgb(172, 197, 214);
 }
 
-.chat-1, .chat-2, .chat-3, .chat-4 {
+.chat-1 {
   transition-property: width;
   transition-duration: 0.5s;
   transition-delay: 0.5s;
   transition-timing-function: ease-in;
 }
 
+.dupla-empleos {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+}
+
+@media (max-width: 1100px) {
+  .chat-1 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 768px) {
+  .chat-1 {
+    font-size: 20px;
+    margin: 30px auto;
+  }
+  .chats {
+    height: 30vh;
+  }
+  .recomendaciones {
+    font-size: 18px;
+    padding: 5px;
+  }
+}
 body {
   font-family: "Inter", sans-serif;
   overflow: hidden;
@@ -156,21 +214,53 @@ body {
   animation: desliza 1s ease-out;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1140px) {
+  .aside-home {
+    width: 25vw;
+    padding: 20px;
+  }
+  .aside {
+    width: 25vw;
+    padding: 20px;
+  }
+  .contenedor, body {
+    width: 100vw;
+  }
   .header {
+    width: 70vw;
     display: flex;
-    width: auto;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .titulo {
+    font-size: 40px;
+  }
+  .usuario {
+    font-size: 25px;
+  }
+  .barra-buscador {
+    width: 30%;
+    height: 30px;
+    padding: 10px;
+  }
+  .header > h3 {
+    font-size: 18px;
+  }
+  .carousel-inner {
+    width: 70%;
+    height: 70%;
+    margin-top: 0px;
+    margin: auto;
+  }
+  .carousel-item {
+    width: 70%;
+    height: 70%;
+  }
+  .imagenes__carousel {
+    margin-top: 0px;
+    max-height: none;
   }
 }
-.imagenes__carousel {
-  margin-top: 0px;
-  font-size: 16px;
-}
-
-.recomendaciones {
-  font-size: 16px;
-}
-
 .contenedor-empleos {
   display: flex;
   flex-direction: row;
@@ -194,13 +284,6 @@ body {
   align-items: center;
 }
 
-.dupla-empleos {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  justify-content: center;
-}
-
 .recomendaciones {
   margin-left: 20px;
   background-color: white;
@@ -210,6 +293,21 @@ body {
   width: fit-content;
 }
 
+@media (max-width: 1140px) {
+  .tarjeta {
+    width: 25%;
+  }
+}
+@media (max-width: 1000px) {
+  .tarjeta {
+    width: 33%;
+  }
+}
+@media (max-width: 768px) {
+  .tarjeta {
+    width: 100%;
+  }
+}
 .terminos {
   padding: 20px;
 }
@@ -221,4 +319,14 @@ body {
   padding: 10px;
   width: -moz-fit-content;
   width: fit-content;
+}
+
+@media (max-width: 768px) {
+  .terminos {
+    padding: 10px;
+  }
+  .terminos-condiciones {
+    padding: 5px;
+    font-size: 18px;
+  }
 }/*# sourceMappingURL=estilos.css.map */

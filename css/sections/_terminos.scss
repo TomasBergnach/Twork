@@ -8,3 +8,12 @@
     padding: 10px;
     width: fit-content;
 }
+@media (max-width: 768px) {
+    .terminos {
+        padding: 10px;
+    }
+    .terminos-condiciones {
+        padding: 5px;
+        font-size: 18px;
+    }
+}
